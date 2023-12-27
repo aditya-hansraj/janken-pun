@@ -88,6 +88,28 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('keydown', function (event) {
+    let keyPressed = event.key;
+    let hands = document.querySelectorAll('#buttons label');
+    let selectedHand = document.querySelector('#buttons .selected');
+
+    for (let i = 0; i < hands.length; i++) {
+        if (hands[i].classList.contains('selected')) {
+            let newHandIndex;
+
+            if (keyPressed === 'ArrowLeft') {
+                newHandIndex = (i === 0) ? 2 : i - 1;
+            } else if (keyPressed === 'ArrowRight') {
+                newHandIndex = (i === 2) ? 0 : i + 1;
+            }
+
+            select(hands[newHandIndex].htmlFor);
+            break;
+        }
+    }
+});
+
+
 function select(hand) {
     document.querySelectorAll('#buttons label').forEach(label => {
         label.classList.remove('selected');
