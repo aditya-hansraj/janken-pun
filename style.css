@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: linear-gradient(135deg, rgb(104, 163, 225), rgb(222, 87, 200));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game-container{
+    width: 80%;
+    height: 90%;
+    background-color: rgb(227, 227, 216);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+}
+.heading{
+    text-align: center;
+    margin: 2em;
+    width: 70%;
+}
+.field{
+    border-radius: 20px;
+    width: 88%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    background-color: beige;
+}
+.user, .comp{
+    text-align: center;
+    font-weight: 900;
+}
+.user figure, .comp figure{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    font-size: 55px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user figure{
+    background-color: blue;
+}
+.comp figure{
+    background-color: red;
+}
+.picker{
+    margin: 10px;
+    width: 70%;
+    text-align: center;
+}
+.picker h2{
+    margin: 10px;
+}
+#buttons{
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+#buttons input{
+    display: none;
+}
+#buttons label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 20px;
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+#play{
+    background-color: green;
+    outline: none;
+    border: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#buttons label.selected{
+    border: 5px solid blue;
+    background-color: rgba(153, 252, 48, 0.988);
+    font-size: 4em;
+    transition: all ease-out 200ms;
+}
+#result{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    width: 65%;
+    height: 30%;
+    border-radius: 10px;
+    background-color: azure;
+    display: none;
+}
+#result button{
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    width: 20%;
+    height: 15%;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#result p{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 50px 0  40px;
+}

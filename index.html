@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janken pun</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    
+    <!-- ✊🏻🖐🏻✌🏻 ✊🖐️✌️-->
+    <div class="game-container">
+        <div id="result">
+            <p></p>
+            <button onclick="clearResult()">OK</button>
+        </div>
+        <header class="heading">
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        <div class="field">
+            <section class="user">
+                <header>Your Hand</header>
+                <figure id="user-hand"></figure>
+            </section>
+            <section class="vs">
+                vs
+            </section>
+            <section class="comp">
+                <header>Computer's Hand</header>
+                <figure id="comp-hand"></figure>
+            </section>
+        </div>
+        <form action="#" class="picker" id="game-form">
+            <h2>Pick Your Hand</h2>
+            <div id="buttons">
+                <label onclick="select('rock')" for="rock">✊🏻</label>
+                <label onclick="select('paper')" for="paper">🖐🏻</label>
+                <label onclick="select('scissors')" for="scissors">✌🏻</label>
+                <input type="radio" name="hand" value="rock" id="rock">
+                <input type="radio" name="hand" value="paper" id="paper">
+                <input type="radio" name="hand" value="scissors" id="scissors">
+            </div>
+            <button type="submit" id="play">PLAY</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "janken  pon",
+  "version": "1.0.0",
+  "description": "Simple Janken pun Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Janken-pun"
+  },
+  "keywords": [
+    "stone",
+    "paper",
+    "scissors"
+  ],
+  "author": "Aditya Hansraj",
+  "license": "ISC"
+}
